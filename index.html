@@ -1,9 +1,42 @@
 <!DOCTYPE html>
-<html>
+<!-- ICS2O-Unit1-05-HTML-MDL-->
+<html lang="en-ca">
   <head>
-    <title>Title</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="My first MDL Webpage!" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Yuri G" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-orange.min.css" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My first webpage, with proper style!</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout-header-row">
+          <span class="mdl-layout-title">Material Design Lite Components</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+        Enter a number.
+      </div>
+    <!--Simple text field for integers-->
+    <form action="#"></form>
+      <div class="mdl-textfield mdl-js-textfield">
+        <!--Input pattern attribute-->
+        <input class="mdl-textfield__input" type="text" pattern="[0-9]" id="demo-input" />
+        <!--mdl-textfield__label-->
+        <label class="mdl-textfield__label" for="demo-input">Length of square (mm)</label>
+        <!--class "mdl-textfield__error"-->
+        <span class="mdl-textfield__error">Input is not a number.</span>
+      </div>
+    </form>
+    <!--Raised button with ripple-->
+    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Calculate area</button>
+    </main>
   </body>
 </html>
